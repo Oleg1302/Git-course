@@ -1,4 +1,4 @@
-gitgigitgit --version = Показывает устаневлен ли гит и его версию
+git --version = Показывает устаневлен ли гит и его версию
 git --help = Показывает базовые возможности 
 clear = очищает консоль
 dir = Показывает текущие папки в данной дериктории 
@@ -6,6 +6,8 @@ cd /d/Oleg/From-scratch/Git-Practice = для перехода между пап
 git init = Инициализация проекта ( создает системную папку .git(Скрыта на винде))(Необязательно знать что там внутри)
 cd .. = возвращает на одну папку назад 
 git status = команда которая постоянно используеться для выяснениня того что сейчас происходит
+
+
 On branch master = что мы находимся в мастере ветке ( Имеет древовидную структуру )Одна ветка представляет версию вашего проэкта 
 No commits yet = Не зафексировали никаких версий и никаких изменений 
 
@@ -55,7 +57,7 @@ git branch
 git branch   = Мы находимся сейчас в ветке *master
 * master
 
-git branch test = Создает новую ветку 
+git branch test = Создает новую ветку ( test название ветки)
 
 git branch = здесь мы уже видим две ветки 
 * master
@@ -64,7 +66,53 @@ git branch = здесь мы уже видим две ветки
 git branch -D test			= Удаляет ветку (test название ветки)
 Deleted branch test (was 7a2d56b).
 
+git checkout readme  		= Переключает на другую ветку ( readme название ветки)
+Switched to branch 'readme'
+
+git branch		= Видим что мы теперь в ветке readme
+  master
+* readme
+
+ 
+ git checkout -b new 			= Создаю новую ветку и сразу на нее переключаюсь ( new  название ветки)
+Switched to a new branch 'new'
+
+ git branch				= Вижу что мы сразу перешли на новую ветку
+  master
+* new
+  readme
+
+git merge readme			= Связывает две ветки ( readme - название ветки ) 
+Updating 7a2d56b..9c453f6
+Fast-forward
+ readme.md                                          |  3 ++
+ ...0\320\270 \320\263\320\270\321\202\320\260.txt" | 42 +++++++++++++++++++++-
+ 2 files changed, 44 insertions(+), 1 deletion(-)
+ create mode 100644 readme.md
 
 
+ git config --global user.name			= говорит текущее имя пользователя 
+ Oleg
 
+ git config --global user.name "Oleg1302"	=Смена имени пользователь 
+
+ git config --global user.name			= Поменяное имя пользователя 
+ Oleg1302
+
+ git config --global user.email			=говорит текущие емейл пользователя 
+ oleg19940213@gmail.com
+
+git config --global user.email "новый email" 	= смена емейла
+
+
+Asus@LAPTOP-2VG3AEFI MINGW64 /d/oleg/from-scratch/git-practice (master)
+git branch -m main
+
+Asus@LAPTOP-2VG3AEFI MINGW64 /d/oleg/from-scratch/git-practice (main)	= Меняет master на main
+$ git status
+On branch main
+
+Asus@LAPTOP-2VG3AEFI MINGW64 /d/oleg/from-scratch/git-practice (main)
+$ git branch
+* main
 
