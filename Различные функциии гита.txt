@@ -1,4 +1,4 @@
-git --version = Показывает устаневлен ли гит и его версию
+gitgigitgit --version = Показывает устаневлен ли гит и его версию
 git --help = Показывает базовые возможности 
 clear = очищает консоль
 dir = Показывает текущие папки в данной дериктории 
@@ -23,8 +23,48 @@ git add . = начинает ослеживать все файлы ( Включ
 
 После каких либо изменений нужно снова ввести git add .
 
+
 				commit(Коммиты)
 git commit -m "firstcommit" = Рекомендуют использовать параметр -m и в кавычках название коммита.git -  
+
+[master (root-commit) 834ef65] first commit =  Ветка master , уникальный код коммита 834ef65!!!
+ 3 files changed, 50 insertions(+) = 3 файла было изменено , 50 вставок 
+ create mode 100644 index.html = добавили index.html
+ create mode 100644 script.js  = добавили script.js
+
+					VsCood
+.gitignore = создаем файл в vscood и добовляем туда название всех файлов которые нужно что бы игнорил git
+после чего вводим в git команду  git add .   .
+Что бы добавить папку в игнор пишем /название папки ( /logs)
+
+					GIT
+
+Asus@LAPTOP-2VG3AEFI MINGW64 /d/oleg/from-scratch/git-practice (master)
+$ git commit -m "added gitignore"
+[master 7a2d56b] added gitignore    = Код нового коммита 
+ 1 file changed, 3 insertions(+)    = Есть 3 коммита с которыми мы уже можем работать 
+ create mode 100644 .gitignore
+
+Asus@LAPTOP-2VG3AEFI MINGW64 /d/oleg/from-scratch/git-practice (master)
+$ git status
+On branch master			= Нечего изменять или коммитить потому что мы все зафексировали 
+nothing to commit, working tree clean
+
+				Работа с ветками (branch)
+git branch  
+git branch   = Мы находимся сейчас в ветке *master
+* master
+
+git branch test = Создает новую ветку 
+
+git branch = здесь мы уже видим две ветки 
+* master
+  test
+ 
+git branch -D test			= Удаляет ветку (test название ветки)
+Deleted branch test (was 7a2d56b).
+
+
 
 
 
